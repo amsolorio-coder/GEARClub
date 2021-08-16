@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      div.gallery {
+        border: 1px solid #ccc;
+      }
+
+      div.gallery:hover {
+        border: 1px solid #777;
+      }
+
+      div.gallery img {
+        width: 100%;
+        height: auto;
+      }
+
+      div.desc {
+        padding: 15px;
+        text-align: center;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      .responsive {
+        padding: 0 6px;
+        float: left;
+        width: 24.99999%;
+      }
+
+      @media only screen and (max-width: 700px) {
+        .responsive {
+          width: 49.99999%;
+          margin: 6px 0;
+        }
+      }
+
+      @media only screen and (max-width: 500px) {
+        .responsive {
+          width: 100%;
+        }
+      }
+
+      .clearfix:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      .w3-button {
+        width: 150px;
+      }
+    </style>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GEAR CLUB| Club Members</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,500&family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="shortcut icon"
+      href="https://cdn.glitch.com/f6508cf9-1bcc-4284-a34d-1bcab5fe0551%2FPaint_3D_3_25_2021_3_41_58_PM.png?v=1626908553355"
+      type="image/x-icon"
+    />
+    <!-- import the p5.js library -->
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <a class="navbar-brand" href="/" style="padding: 0px 0px 20px 0px;"
+          ><img
+            src="https://cdn.glitch.com/f6508cf9-1bcc-4284-a34d-1bcab5fe0551%2FPaint_3D_3_25_2021_3_41_58_PM.png?v=1626908553355"
+            width="auto"
+            height="70"
+            alt="Logo"
+        /></a>
+
+        <div id="branding">
+          <h1><span class="highlight">GEAR CLUB</span></h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="clubmembers.html">Club Members</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contacts.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="about">
+      <div class="container">
+        <div class="light">
+          <br />
+          <h3>Who are the GEAR Club Members?</h3>
+          <p></p>
+          <br />
+          <p>
+            Talise Oh (President): Talise is our wonderful president and is
+            majoring in Physics. She is transferring next semester to UCSC.
+            Talise is interested in pursuing astrophysics. She would be happy to
+            take that degree all the way to NASA, but is also open for other
+            great opportunities. Talise also has a twin!
+          </p>
+          <br />
+          <p>
+            Aaron Lozano (Vice President): Aaron is majoring in Aerospace
+            Engineering and is a continuing student. He hopes to transfer to San
+            Jose State, Uc Davis,or ASU. Arron is interested in going into
+            either Aerospace/Aeronautics or Mechanical engineering as a future
+            Carrer. Arron also loves to "frequently look into the void and
+            question if i am truly worthy of the gifts bestowed upon me."
+          </p>
+          <br />
+          <p>
+            Anthony Mendoza(Outreach) : Anthony is majoring in Mathematics and
+            will be transferring next semester to UC Davis. He is interested in
+            eventually becoming a Mathematics Professor. Anthony also loves
+            music! In addition to his Math degree, Anthony has a degree in music
+            as well.
+          </p>
+          <br />
+          <p>
+            Paxton Schweigert (Software Specialist): Paxton is majoring in
+            Computer Science and is transferring next semester. He will be
+            transfering to UC Santa Cruz. Paxton is unsure of what exactly he
+            wants to do with his degree , but we are sure he will go on to do
+            great things! He also has lived in multiple countries in Asia!
+          </p>
+          <br />
+          <p>
+            Alexis Solorio (Social media): Alexis is majoring in Engineering and
+            is a continuing student. She hopes to transfer to SJSU or a UC. She
+            is interested in going into either Chemical or Bio Engineering.
+            Alexis also loves to swim!
+          </p>
+          <br />
+          <p>
+            Jose Velasco (App overlord ): Jose is majoring in Computer Science
+            and is a continuing student. He hopes to transfer to California
+            State University Monterey Bay or San José State University. Jose is
+            interested in becoming a Software Engineer. Jose is also the
+            Computer Science Club President at Gavilan College. He likes to play
+            league of legends.
+          </p>
+          <br />
+          <p>
+            Andres Medina (Math wiz ): Andres is majoring in Math and is
+            transfering next semster. He is transfering to SJSU. Andres is
+            interested in going into Materials Engineering. He also plays rugby
+            for Silicon Valley R.F.C and is a musician and a gamer.
+          </p>
+          <br />
+          <p>
+            Jacob Kacer (Social media): Jacob is majoring in Computer
+            Programming and is a continuing student.He is not yet sure of where
+            he wants to transfer. He is interested in Programming or designing
+            apps. He has also turned 2 bicycles into electric bicycles
+          </p>
+          <br />
+          <p>
+            Abby Nguyen (Social media): Abby is majoring in Chemical Engineering
+            and is transfering next semster. She is transfering to UC Berkeley.
+            Abby is unsure of what exactly she wants to do with her degree , but
+            we are sure she will go on to do great things! She also failed her
+            driving test twice on a critical error both times. Needless to say
+            she prefers not to drive if possible.
+          </p>
+          <br />
+          <p>
+            David Argudo(Adviser): David has been proclaimed OUR FEARLESS LEADER
+            and ADVISING BOSS of the GEAR Club by yours truly; the club members.
+            He earned his Megamind-status at the University of Pennsylvania and
+            has since taught at various community colleges (let’s be real, the
+            only one that really counts is Gavilan College). An avid student of
+            life, David enjoys running (not jogging), raw bell peppers, and
+            cauliflower pizza.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <br /><!-- Footer 
+      <footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-flickr"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+        <p class="w3-medium"></p>
+      </footer>
+    </footer-->
+    <footer>
+      <div class="content">
+        <div class="top">
+          <div class="logo-details"></div>
+          <div class="media-icons">
+            <a href="https://twitter.com/GEARClub5"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a href="https://www.instagram.com/gear_club2021/"
+              ><i class="fab fa-instagram"></i
+            ></a>
+
+            <a href="https://www.youtube.com/channel/UC77kPUDM07rsGGA-vDpmuog"
+              ><i class="fab fa-youtube"></i
+            ></a>
+          </div>
+        </div>
+        <div class="link-boxes">
+          <ul class="box">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="clubmembers.html">Club Members</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contacts.html">Contact Us</a></li>
+          </ul>
+
+          <!-- <ul class="box">
+            <li class="link_name">Account</li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">My account</a></li>
+            <li><a href="#">Prefrences</a></li>
+            <li><a href="#">Purchase</a></li>
+          </ul>
+          
+          <ul class="box input-box">
+            <li class="link_name">Subscribe</li>
+            <li><input type="text" placeholder="Enter your email" /></li>
+            <li><input type="button" value="Subscribe" /></li>
+          </ul> -->
+        </div>
+      </div>
+    </footer>
+
+    <div class="clearfix"></div>
+  </body>
+</html>

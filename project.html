@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      div.gallery {
+        border: 1px solid #ccc;
+      }
+
+      div.gallery:hover {
+        border: 1px solid #777;
+      }
+
+      div.gallery img {
+        width: 100%;
+        height: auto;
+      }
+
+      div.desc {
+        padding: 15px;
+        text-align: center;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      .responsive {
+        padding: 0 6px;
+        float: left;
+        width: 24.99999%;
+      }
+
+      @media only screen and (max-width: 700px) {
+        .responsive {
+          width: 49.99999%;
+          margin: 6px 0;
+        }
+      }
+
+      @media only screen and (max-width: 500px) {
+        .responsive {
+          width: 100%;
+        }
+      }
+
+      .clearfix:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      .w3-button {
+        width: 150px;
+      }
+    </style>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GEAR CLUB| Projects</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,500&family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="shortcut icon"
+      href="https://cdn.glitch.com/f6508cf9-1bcc-4284-a34d-1bcab5fe0551%2FPaint_3D_3_25_2021_3_41_58_PM.png?v=1626908553355"
+      type="image/x-icon"
+    />
+    <!-- import the p5.js library -->
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <a class="navbar-brand" href="/" style="padding: 0px 0px 20px 0px;"
+          ><img
+            src="https://cdn.glitch.com/f6508cf9-1bcc-4284-a34d-1bcab5fe0551%2FPaint_3D_3_25_2021_3_41_58_PM.png?v=1626908553355"
+            width="auto"
+            height="70"
+            alt="Logo"
+        /></a>
+
+        <div id="branding">
+          <h1><span class="highlight">GEAR CLUB</span></h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="clubmembers.html">Club Members</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contacts.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="about">
+      <div class="container">
+        <div class="light">
+          <br />
+          <h3>How to Create a Outreach Video</h3>
+          <p>By:Our Fearless Leader</p>
+          <br />
+          <p>
+            In the age of the Internet and Social Media it’s fairly easy to
+            Google keywords or phrases and find hundreds of related articles,
+            images, and videos. So why is it so hard to find instructions on how
+            to create an effective educational outreach video? Is it some sort
+            of best-kept marketing secret? I typed “how to create an effective
+            educational outreach video” into the Google search bar and only two
+            relevant results popped up. In the words of one of Gav’s Math
+            instructors, that means…more work. Thanks Google. So I did my
+            research and watched a bunch of educational videos about small-scale
+            gardening, black holes, climate change, and the social hierarchy of
+            elephants. In the following paragraphs, I’ll do my best to highlight
+            some important elements of an effective educational outreach video
+            based on my pretty amateur internet sleuthing.
+          </p>
+          <br />
+          <p>
+            Without delving into all the
+            <a href="https://www.lifescied.org/doi/10.1187/cbe.16-03-0125"
+              >science</a
+            >
+            (it’s a lot), there are generally four elements that influence the
+            effectiveness of an educational outreach video. These are duration,
+            format, visual (aides & references), and audio. For a really
+            comprehensive deep-dive into elements like best speaking rate and
+            vocal cues, see
+            <a href="https://www.lifescied.org/doi/10.1187/cbe.16-03-0125"
+              >this paper</a
+            >
+            by Cynthia J. Brame, published in the Life Sciences Education
+            Journal.
+          </p>
+          <br />
+          <p>
+            Duration. 2 to 6 minutes is the sweet-spot. Brame specifies that
+            each video should be less than or equal to 6 minutes in length. This
+            was confirmed by the only other relevant google search result. It’s
+            a paper by a group of undergrads and professors from the University
+            of Arizona who conducted a
+            <a href="https://www.capjournal.org/issues/24/24_32.pdf">project</a>
+            to create astronomy-related educational videos. They found that 2-6
+            minutes was satisfactory. Apparently, anything longer than that is
+            just an invitation to nap.
+          </p>
+          <br />
+          <p>
+            Format. For many informative, “what is…” videos, the general format
+            is the following: brief description of what it is, a comparison to
+            something similar, pros and cons, some sort of enlightening
+            conclusion, a continuous theme to keep everything gelled together.
+          </p>
+          <br />
+          <p>
+            Visual. Visual aides in these types of videos are used to emphasize,
+            summarize, relate, organize, or illustrate important ideas. Types of
+            important visual aids include: Diagrams to describe relationship of
+            ideas Pictures to represent ideas or illustrate text or audio
+            explanation Short videos to illustrate ideas, how-to, etc.. Videos
+            of a narrator Pop up text
+          </p>
+          <br />
+          <p>
+            Audio. If you’re an introvert or generally a private person, the
+            following is bad news. In every educational outreach video I’ve
+            seen, there is always a narrator. Always. Time to invest in a great
+            quality voice changer or bribe an extravert to do the job! So here
+            are the important audio elements to include: Narrator Appropriate
+            background sound to emphasize or illustrate Sound from included
+            short videos Limited background music/sounds
+          </p>
+          <br />
+          <p>
+            That’s it! We’re all set to create educational outreach videos and
+            take over the world!
+          </p>
+          <br />
+          <p>
+            Published July 22, 2021 By GearClub
+          </p>
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <h3>The Official, Boring, Not-Fun Description of the Project:</h3>
+          <p>By:Our Fearless Leader</p>
+          <br />
+          <p>
+            GEAR Club’s Smart Sustainable Garden Project (SSGP) is a
+            synchronized group effort to create a proof-of-concept mobile garden
+            utilizing a suite of sensors and associated app to help increase the
+            efficiency of the garden. The SSGP is currently in Phase 1 of its
+            3-phase lifecycle. In Phase 1 the club is working to develop a
+            smart, sustainable proof-of-concept garden for a future large-scale
+            version at Gavilan. In Phase 2 we will build the large-scale garden
+            (this will require the involvement of the administration at Gavilan
+            College). Our club and Gavilan’s Student Government are planning to
+            raise the funds for Phase 2 in the next three academic years. In
+            Phase 3 we will invite Gavilan’s community to use the garden and
+            help us maintain it.
+          </p>
+          <br />
+          <p>
+            In its current phase, the SSGP focuses on four major components:
+            Sustainability Garden Design & Construction App Design &
+            Construction Education & Outreach
+          </p>
+          <br />
+          <p>
+            The first component, Sustainability, is applied throughout the
+            entire project to include the remaining three components. It carries
+            enormous weight in decisions on material, design, construction, and
+            location. The project aims to have the least negative impact on the
+            environment as possible, given our resource and time constraint.
+          </p>
+          <br />
+          <p>
+            The second component, Garden Design & Construction, is governed by
+            the first component as stated above. It involves research, problem
+            scoping, scaling, modeling, constructing CAD designs, 3-D printing,
+            testing, and actually building the garden.
+          </p>
+          <br />
+          <p>
+            The third component, App Design & Construction is primarily focused
+            on building code to interface with the sensor suite and turning that
+            code into something user-friendly for current and future
+            garden-caretakers.
+          </p>
+          <br />
+          <p>
+            The fourth component, Education & Outreach not only refers to the
+            education of others but also to the education of the team. This
+            component involves research, presentations, discussions, networking,
+            website-building, writing, and community-building activities.
+          </p>
+          <br />
+          <br />
+          <p>
+            Published July 8, 2021 By Our Fearless Leader
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="content">
+        <div class="top">
+          <div class="logo-details"></div>
+          <div class="media-icons">
+            <a href="https://twitter.com/GEARClub5"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a href="https://www.instagram.com/gear_club2021/"
+              ><i class="fab fa-instagram"></i
+            ></a>
+
+            <a href="https://www.youtube.com/channel/UC77kPUDM07rsGGA-vDpmuog"
+              ><i class="fab fa-youtube"></i
+            ></a>
+          </div>
+        </div>
+        <div class="link-boxes">
+          <ul class="box">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="clubmembers.html">Club Members</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contacts.html">Contact Us</a></li>
+          </ul>
+
+          <!-- <ul class="box">
+            <li class="link_name">Account</li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">My account</a></li>
+            <li><a href="#">Prefrences</a></li>
+            <li><a href="#">Purchase</a></li>
+          </ul>
+          
+          <ul class="box input-box">
+            <li class="link_name">Subscribe</li>
+            <li><input type="text" placeholder="Enter your email" /></li>
+            <li><input type="button" value="Subscribe" /></li>
+          </ul> -->
+        </div>
+      </div>
+    </footer>
+
+    <div class="clearfix"></div>
+  </body>
+</html>
